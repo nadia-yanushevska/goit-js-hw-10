@@ -1,0 +1,86 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.snackbar-sec {
+  padding: 36px 156px;
+}
+.form {
+  max-width: 360px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.form-label {
+  height: 72px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-input {
+  padding: 8px 16px;
+  height: 40px;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.form-input:hover {
+  border-color: black;
+}
+
+.form-input:active {
+  border-color: #4e75ff;
+}
+.form-field {
+  padding: 8px 34px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+
+  display: flex;
+  gap: 40px;
+  justify-content: start;
+  align-items: center;
+}
+.form-field:hover {
+  border-color: black;
+}
+.field-legend {
+}
+.field-label {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.field-input {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
+.form-btn {
+  padding: 8px 16px;
+  height: 40px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #4e75ff;
+  color: white;
+
+  font-size: inherit;
+  font-weight: 500;
+}
+.form-btn:hover {
+  background-color: #6c8cff;
+}
