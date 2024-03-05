@@ -1,13 +1,5 @@
-// Описаний у документації
-import iziToast from 'izitoast';
-// Додатковий імпорт стилів
-import 'izitoast/dist/css/iziToast.min.css';
-
-import { getToastOptions } from './modules/izitoast-options.js';
-
-const form = document.querySelector('[js-form]');
-const delayElem = form.querySelector('[js-delay]');
-const fulfilElem = form.querySelector('[js-fulfil]');
+import { form, delayElem, fulfilElem } from './modules/2-refs.js';
+import { getMessage, showMessage } from './modules/messages.js';
 
 form.addEventListener('submit', onFormSubmit);
 
@@ -36,16 +28,4 @@ function createPromise(delay, isActive) {
             isActive ? resolve(message) : reject(message);
         }, delay);
     });
-}
-
-function getMessage(delay, isActive) {
-    let message = isActive ? `✅ Fulfilled` : `❌ Rejected`;
-    message += ` promise in ${+delay}ms`;
-    return message;
-}
-
-function showMessage(message, isFulfilled) {
-    console.log(message);
-
-    iziToast.show(getToastOptions(message.slice(2), isFulfilled));
 }
