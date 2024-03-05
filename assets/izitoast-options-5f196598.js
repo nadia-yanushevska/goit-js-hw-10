@@ -1,0 +1,2 @@
+const e="/goit-js-hw-10/assets/success-1f01a3e2.svg",t="/goit-js-hw-10/assets/error-743e7f10.svg";function n(o,s){return{title:s?"OK":"Error",titleSize:"16px",titleLineHeight:"24px",message:o,messageSize:"16px",messageLineHeight:"24px",messageColor:"#fff",iconUrl:s?e:t,backgroundColor:s?"#59a10d":"#EF4040",progressBarColor:s?"#326101":"#B51B1B",theme:"dark",position:"topRight",class:"message"}}export{n as g};
+//# sourceMappingURL=izitoast-options-5f196598.js.map
