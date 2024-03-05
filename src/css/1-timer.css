@@ -1,73 +1,71 @@
 .timer-sec {
-  padding: 36px 156px;
+    padding: 36px 156px;
 
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .input {
-  display: flex;
-  gap: 8px;
-  height: 36px;
+    display: flex;
+    gap: 8px;
+    height: 36px;
 }
-
 .timer-input {
-  padding: 8px 16px;
+    padding: 8px 16px;
 
-  border: 1px solid #808080;
+    border: 1px solid #808080;
 }
 
 .timer-input:hover {
-  border-color: black;
+    border-color: black;
 }
 
 .timer-input:active {
-  border-color: #4e75ff;
+    border-color: #4e75ff;
 }
 
 .timer-input:disabled {
-  color: #808080;
-  background-color: #fafafa;
-  border-color: inherit;
+    color: #808080;
+    background-color: #fafafa;
+    border-color: inherit;
 }
 
 .timer-btn {
-  padding: 8px 16px;
+    padding: 8px 16px;
 
-  border: none;
-  border-radius: 8px;
+    border: none;
+    border-radius: 8px;
 
-  background-color: #4e75ff;
-  color: white;
+    background-color: #4e75ff;
+    color: white;
 
-  font-size: inherit;
-  font-weight: 500;
+    font-size: inherit;
+    font-weight: 500;
 }
 .timer-btn:hover {
-  background-color: #6c8cff;
+    background-color: #6c8cff;
 }
 .timer-btn:disabled {
-  background-color: #cfcfcf;
-  color: #989898;
-  cursor: initial;
+    background-color: #cfcfcf;
+    color: #989898;
 }
 
 .timer {
-  display: flex;
-  gap: 24px;
+    display: flex;
+    gap: 24px;
 }
 .field {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .value {
-  font-size: 40px;
-  line-height: 1.2;
+    font-size: 40px;
+    line-height: 1.2;
 }
 .label {
-  letter-spacing: 0;
-  text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: uppercase;
 }

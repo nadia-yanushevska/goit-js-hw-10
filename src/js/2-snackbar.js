@@ -3,6 +3,8 @@ import iziToast from 'izitoast';
 // Додатковий імпорт стилів
 import 'izitoast/dist/css/iziToast.min.css';
 
+import { getToastOptions } from './modules/izitoast-options.js';
+
 const form = document.querySelector('[js-form]');
 const delayElem = form.querySelector('[js-delay]');
 const fulfilElem = form.querySelector('[js-fulfil]');
@@ -45,30 +47,5 @@ function getMessage(delay, isActive) {
 function showMessage(message, isFulfilled) {
     console.log(message);
 
-    iziToast.show(getToastOptions(message, isFulfilled));
-}
-
-function getToastOptions(message, isFulfilled) {
-    const options = {
-        title: isFulfilled ? 'OK' : 'Error',
-        titleSize: '16px',
-        titleLineHeight: '24px',
-
-        message: message.slice(2),
-        messageSize: '16px',
-        messageLineHeight: '24px',
-        messageColor: '#fff',
-
-        icon: 'icon icon-success',
-        // iconUrl: `<use href="/img/sprite.svg#icon-success"></use>`,
-        iconColor: '#fff',
-
-        backgroundColor: isFulfilled ? '#59a10d' : '#EF4040',
-        progressBarColor: isFulfilled ? '#326101' : '#B51B1B',
-
-        theme: 'dark',
-        position: 'topRight',
-        class: 'message',
-    };
-    return options;
+    iziToast.show(getToastOptions(message.slice(2), isFulfilled));
 }

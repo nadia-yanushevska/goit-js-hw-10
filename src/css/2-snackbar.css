@@ -89,3 +89,6 @@ input[type='number'] {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.5px;
 }
+.message svg {
+    stroke: #fff;
+}
